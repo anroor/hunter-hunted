@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="us.kendellfabrici.leeter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/hunterhunted_logo_min"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="us.kendellfabrici.leeter.LeeterActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="us.kendellfabrici.leeter.MatchesAct"
+            android:label="@string/title_activity_matches"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            
+        </activity>
+        <activity
+            android:name="us.kendellfabrici.leeter.CreateMatchActivity"
+            android:label="@string/title_activity_create_match"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="us.kendellfabrici.leeter.MainMatchActivity"
+            android:label="@string/title_activity_main_match"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="us.kendellfabrici.leeter.BeginGame1"
+            android:label="@string/title_activity_begin_game1"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="us.kendellfabrici.leeter.MapGame"
+            android:label="@string/title_activity_map_game"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="us.kendellfabrici.leeter.GameOverAct"
+            android:label="@string/title_activity_game_over" 
+            android:noHistory="true"
+             android:launchMode="singleTask" >
+            >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@drawable/background"
+	 android:layout_height="match_parent"
+	 android:layout_width="match_parent"
+	 android:orientation="vertical"
+ >
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:text="@string/match_name" />
+
+    <EditText
+        android:background="@drawable/edittext_drawable"
+        android:hint="@string/match_name"
+        android:id="@+id/et_matchname"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:singleLine="true" 
+       />
+    
+   <Spinner
+	    android:id="@+id/s_matchTime"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+    />
+	<Button
+	     android:background="@drawable/button_style"
+		 android:id="@+id/btn_creatematch"
+		 android:layout_height="wrap_content"
+		 android:layout_marginTop="20dp"
+         android:layout_marginLeft="25dp"
+         android:layout_marginRight="25dp"
+		 android:layout_width="match_parent"
+		 android:onClick="btnCreateMatch"
+		 android:text="@string/add_match"
+	 />
+
+	<TextView
+	    android:id="@+id/textSuccessful"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/add_match_successful"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:visibility="invisible"
+	 />
+	
+	<TextView
+	    android:id="@+id/textError"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/add_match_error"
+	    android:textAppearance="?android:attr/textAppearanceMedium" 
+	    android:visibility="invisible"
+	 />
+</LinearLayout>

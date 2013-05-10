@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HunterHunted</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_matches">MatchesAct</string>
+    <string name="title_activity_create_match">CreateMatchActivity</string>
+    <string name="title_activity_main_match">MainMatchActivity</string>
+    <string name="title_activity_begin_game1">BeginGame1</string>
+    <string name="title_activity_map_game">MapGame</string>
+    <string name="user_name">Nombre de Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="login_error">No pudo iniciar sesión, asegúrese de tener el nombre de usuario y contraseña correctos</string>
+    <string name="descriptionLogo">HunterHunted App Logo</string>
+    <string name="logout">Salir</string>
+    <string name="add_match">Crear Partida</string>
+    <string name="match_name">Nombre partida</string>
+    <string name="count_players">Núm. Jugadores</string>
+    <string name="add_match_successful">Partida creada</string>
+    <string name="add_match_error">Ya existe un nombre con esa partida</string>
+    <string name="leavingparty">Abandonar Partida</string>
+    <string name="random">Empezar Aleatorio</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_game_over">GameOverAct</string>
+
+</resources>

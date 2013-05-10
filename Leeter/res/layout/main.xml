@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@drawable/background"
+	 android:layout_height="fill_parent"
+	 android:layout_width="fill_parent"
+	 android:orientation="vertical"
+ >
+	
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+    >
+    	<ImageView
+    	    android:contentDescription="@string/descriptionLogo"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="match_parent"
+    	    android:layout_marginTop="40dp"
+    	 	android:src="@drawable/hunterhunted_logo"
+    	 />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+    >
+    	
+	    <TextView
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:text="@string/user_name"
+	        android:textColor="@color/white"
+	    />
+	    <EditText
+	        android:background="@drawable/edittext_drawable"
+	        android:hint="@string/user_name"
+	        android:id="@+id/et_username"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:maxLines="1"
+	        android:singleLine="true" 
+	     />
+	   
+	
+		<TextView
+			 android:layout_height="wrap_content"
+			 android:layout_width="fill_parent"
+			 android:text="@string/password"
+			 android:textColor="@color/white"
+		 />
+		<EditText
+		    android:background="@drawable/edittext_drawable"
+		    android:hint="@string/password"
+		    android:id="@+id/et_password"
+		    android:inputType="textPassword"
+		    android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:maxLines="1"
+		    android:singleLine="true"
+		 />
+				
+		<Button
+			 android:background="@drawable/button_style"
+			 android:id="@+id/btn_login"
+			 android:layout_height="wrap_content"
+			 android:layout_width="fill_parent"
+			 android:layout_margin="10dp"
+			 android:onClick="btnLogin"
+			 android:text="@string/login"
+		 />
+		
+		<TextView
+		    android:id="@+id/textError"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:text="@string/login_error"
+		    android:textColor="@color/white"
+		    android:visibility="invisible"  
+		 />
+	</LinearLayout>
+
+</LinearLayout>
