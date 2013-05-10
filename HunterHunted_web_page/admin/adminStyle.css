@@ -1,0 +1,244 @@
+/* CSS Document */
+body, p, div, img{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: white;
+}
+p{
+    text-align: center;
+}
+p+p{
+    margin: 2% 0;
+}
+input{
+    border-radius: 10px;
+}
+
+/*LOGIN.PHP ** INDEX.PHP ** USERS.PHP*/
+#wrapper{
+    color: #f6f2ef;
+}
+
+/*LOGIN.PHP*/
+#login{
+    background:  -webkit-linear-gradient(top left, #006a25, #7cc623);
+    background:     -moz-linear-gradient(top left, #524e4c, #9e9086);
+    background:       -o-linear-gradient(top left, #524e4c, #9e9086);
+    
+    border: 5px solid black;
+    box-shadow: 5px 5px 2px #6a4430;
+    height: auto;
+    margin: 10% auto;
+    position: relative;
+    width: 587px;
+}
+/*LOGIN.PHP*/
+#login p:first-child{
+    margin-top: 5px;
+}
+/*LOGIN.PHP*/
+#user_name,
+#password, 
+#full_name,
+#email,
+#country,
+#city
+{
+    height: 30px;
+    font-size: 25px;
+    width: 50%;
+}
+/*LOGIN.PHP*/
+#btn_login, #btn_add{
+    border: none;
+    background: black;
+    color: #FFF;
+    padding: 5px;
+    text-decoration: none;
+    width: 40%;
+}
+/*LOGIN.PHP*/
+#btn_login:hover, #btn_add:hover{
+    background: url(../img/admin_background.jpg);
+}
+/*INDEX.PHP ** USERS.PHP*/
+#header {
+    background:  -webkit-linear-gradient(top left, #AE9C74, #BFBAA4);
+    background:     -moz-linear-gradient(top left, #AE9C74, #BFBAA4);
+    background:       -o-linear-gradient(top left, #AE9C74, #BFBAA4);
+    padding:10px;
+    margin:0px;
+}
+/*INDEX.PHP ** USERS.PHP*/
+#navcontainer {
+    background-color: #333333;
+    padding: 10px;
+}
+/*INDEX.PHP ** USERS.PHP*/
+#navcontainer ul {
+    margin: 0;
+    padding: 0;
+}
+/*INDEX.PHP ** USERS.PHP*/
+#navcontainer ul li {
+    display: inline;
+}
+/*INDEX.PHP ** USERS.PHP*/
+#navcontainer ul li a {
+    padding: 0.4em 1.0em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/*INDEX.PHP ** USERS.PHP*/
+#navcontainer ul li a#current, #navcontainer ul li a:hover{
+    background: white;
+    color: #000033;
+    padding: 0.4em 1.0em 1.0em 1.0em;
+}
+/*INDEX.PHP ** USERS.PHP*/
+#content {
+	background: white;
+        color: black;
+        margin: 0 10px 10px 10px;
+	overflow: auto;
+	padding: 5px 10px;
+}
+
+#users_delete{
+    clear: both;
+}
+
+table#users_list{
+    font-size: 12px;
+}
+
+select, select option{
+    width: 100px;
+}
+
+#footer{
+    font-size: 10px;
+}
+/*LOGIN.PHP*/
+.done {
+	background-color: #6C3;
+}
+.warning {
+	background-color: #FFFFCC;
+}
+.warning a{
+    color: black !important;
+}
+.error {
+	background-color: #FF3300;
+	color: #FFF;
+	border-color: #FFF;
+}
+
+.item_list td:nth-child(4),.item_list td:nth-child(6), .item_list td:nth-child(7){
+    text-transform: capitalize;
+}
+
+.views{
+    background: none;
+    border: none;
+    border-radius: 0;
+    display: inline;
+    margin: 0;
+}
+
+.views:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width:755px){
+    /*LOGIN.PHP*/
+    #wrapper{
+       width: 750px;
+    }
+    /*LOGIN.PHP ** USERS.PHP*/
+    #wrapper{
+        background: url(../img/admin_background.jpg);
+        border: 2px solid black;
+        box-shadow: 10px 10px 5px #cacaca;
+        margin: 2% auto;
+    }
+    /*LOGIN.PHP*/
+     #login{
+        font-size: 20px;
+    }
+    #users_delete{
+        float: right;
+    }
+}
+
+@media screen and (min-width:599px) and (max-width:754px){
+    body{
+        background: url(../img/admin_background.jpg);
+    }
+    /*LOGIN.PHP*/
+    #wrapper{
+        height: 100%;
+        width: auto;
+    }
+    /*LOGIN.PHP*/
+    #login{
+        font-size: 19px;
+    }
+    #users_delete{
+        float: right;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:598px){
+    body{
+        background: url(../img/admin_background.jpg);
+    }
+    #login{
+        margin: 10% 0;
+        width: auto;
+    }
+    #login{
+        font-size: 18px;
+    }
+    #users_delete{
+        float: right;
+    }
+}
+
+@media screen and (min-width:407px) and (max-width:480px){
+    body{
+        background: url(../img/admin_background.jpg);
+    }
+    #login{
+        width: auto;
+    }
+    #login p img, #header h1 a img{
+        height: auto;
+        width: 100%;
+    }
+    #login{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:406px){
+    body{
+        background: url(../img/admin_background.jpg);
+        width: 406px;
+    }
+    #login{
+        width: 391px;
+        font-size: 16px;
+    }
+    #users_delete{
+        float: right;
+    }
+}
